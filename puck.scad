@@ -1,5 +1,6 @@
 Radius = 25;
 Tykkelse = 10;
+$fn = 100; // Set the number of faces for curves
 
 module puck(){
 	difference(){
