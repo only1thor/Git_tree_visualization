@@ -43,20 +43,55 @@ Hvordan kopi-systemet skalerer når man er flere
 * `git status`
 
 ### Branch & fast-forward merge
-* git checkout -b nytt-avsnitt
+* `git checkout -b nytt-avsnitt`
   * > [Legg til branch i treet + flytt HEAD + label nytt-avsnitt]
 * > rediger Docs.md - legg til en linje
-* git add
-* git commit
+* `git diff`
+* `git add`
+* `git commit`
   * > [Legg på id på noden]
-* git checkout main
-  * > [Flytt HEAD-label]
-* git merge nytt-avsnitt
+* `git checkout main`
+  * > [Flytt HEAD-label, flipp branch-labels]
+* `git merge nytt-avsnitt`
   * > [Flytt HEAD og main-label opp til nytt-avsnitt-label, alle står]
 * > Observer at merge-strategien er fast-forward
-* > `git log --graph --branches --oneline`
-* git branch
+* `git log --graph --branches --oneline`
+* `git branch`
 
 ### Branch & konflikt
+* `git checkout -b endre-avsnitt-2`
+  * > [Legg til branch i treet + flytt HEAD + label endre-avsnitt-2]
+* rediger/skriv nytt avsnitt i doc.md
+* `git add`
+* `git commit`
+  * > [Legg på id på noden]
+* > Woops, glemte noe, burde fikse noe annet i main
+* `git checkout main`
+  * > [Flytt HEAD-label, flipp branch-labels]
+* rediger samme avsnitt, legg på eller fjern evt. liste, samme sted som forrige branch
+* `git add`
+* `git commit`
+  * > [Legg på id på noden]
+* `git merge endre-avsnitt-2`
+  * > [Flytt HEAD og main-label opp til ny merge-commit-node, treet mot]
+* > Rydd opp i konflikt
+* `git add`
+    * Poengtere at git add = resolve conflict
+* `git commit`
+  * > [legge på commit id]
+* `git log --graph --branches --oneline`
+
 
 ### Remote
+
+
+### Annet
+git diff / git diff --cached
+
+
+### Andre Git verktøy
+F.eks. Idea / GitCola / VSCode
+- Stage enkeltlinjer for ryddige commits osv
+
+### Github vs Git
+Rundtur i grensesnittet, repo, historikk, pull requests, github actions
