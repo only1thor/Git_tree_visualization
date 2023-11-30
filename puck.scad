@@ -1,7 +1,8 @@
-Radius = 25;
+Radius = 20;
 Tykkelse = 12;
 Hull_storrelse = 5;
-$fn = 300; // Set the number of faces for curves
+ID="H";
+$fn = 100; // Set the number of faces for curves
 
 Avstand_fra_senter = 0;
 
@@ -20,5 +21,10 @@ module puck(){
 
 difference(){
 	puck();
-	cylinder(h = Tykkelse+1, r = Hull_storrelse, center=true);
+	//cylinder(h = Tykkelse+1, r = Hull_storrelse, center=true);
 }
+
+translate([0,0,6])
+color("red")
+linear_extrude(1)
+text(ID,halign = "center", valign="center",size=30);
