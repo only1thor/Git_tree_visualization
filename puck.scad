@@ -28,5 +28,5 @@ difference(){
 
 translate([0,0,6])
 color("red")
-linear_extrude(1)
+linear_extrude(0.5)
 text(ID,halign = "center", valign="center",size=30);
