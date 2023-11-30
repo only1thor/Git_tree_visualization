@@ -95,3 +95,52 @@ F.eks. Idea / GitCola / VSCode
 
 ### Github vs Git
 Rundtur i grensesnittet, repo, historikk, pull requests, github actions
+
+
+
+
+## Konsept notater: 
+
+### Commit ID
+Commit = content + author + date + log(committ melding) + **previous commit** 
+
+Checksum er viktig. 
+
+- every ID is unique
+- every commit is unique
+- commits never change
+
+
+
+
+# MVP
+## Med git treet
+- git add
+- git commit
+- git log
+- git show
+- git push
+- git pull
+- git switch --create
+- git PR på github.
+- git log
+- git status
+- git pull
+- git log
+- git status
+## Happy case til hit. 
+- rediger på github (på main)
+- rediger lokalt på main. 
+- git pull (skap konflikt.) (forklare at pull er fetch+merge)
+## uten git treet 
+- super basic merge konflikt håndtering. 
+
+
+
+>>>>>>>>>>>>>>>>>>>>>master
+santoeuhsanoteu
+=================
+hoesunthaoseunth
+<<<<<<<<<<<<<<<<<branch
+
+git add. git commtit. 
