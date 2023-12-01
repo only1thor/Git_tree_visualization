@@ -1,6 +1,6 @@
 Radius = 20;
 Tykkelse = 10;
-Hull_storrelse = 8.5;
+Hull_storrelse = 9;
 ID="H";
 $fn = 50; // Set the number of faces for curves
 
@@ -26,7 +26,7 @@ difference(){
 	//cylinder(h = Tykkelse+1, r = Hull_radius, center=true);
 }
 
-translate([0,0,6])
+translate([0,0,Tykkelse/2])
 color("red")
 linear_extrude(0.5)
 text(ID,halign = "center", valign="center",size=30);
