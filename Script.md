@@ -115,23 +115,35 @@ Checksum er viktig.
 
 # MVP
 ## Med git treet
+- git init|clone
+- <lag fil med gedit>
 - git add
 - git commit
 - git log
 - git show
+- <endre fil med gedit>
+- git add
+- git commit
+- git log
+- git show <hash>
+- <lag github repo + sett opp remote>
 - git push
-- git pull
+- (git pull)
 - git switch --create
+- git push
 - git PR på github.
+- Approve + Merge
 - git log
 - git status
 - git pull
 - git log
 - git status
+
 ## Happy case til hit. 
 - rediger på github (på main)
 - rediger lokalt på main. 
 - git pull (skap konflikt.) (forklare at pull er fetch+merge)
+
 ## uten git treet 
 - super basic merge konflikt håndtering. 
 
