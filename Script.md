@@ -135,12 +135,15 @@ Checksum er viktig.
 ## uten git treet 
 - super basic merge konflikt håndtering. 
 
-
-
+```
 >>>>>>>>>>>>>>>>>>>>>master
 santoeuhsanoteu
 =================
 hoesunthaoseunth
 <<<<<<<<<<<<<<<<<branch
+```
 
-git add. git commtit. 
+```
+git add . 
+git commit
+```
