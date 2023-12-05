@@ -116,17 +116,18 @@ Checksum er viktig.
 # MVP
 ## Med git treet
 - git init|clone
-- <lag fil med gedit>
+- git status
+- [lag fil med gedit]
 - git add
 - git commit
 - git log
 - git show
-- <endre fil med gedit>
+- [endre fil med gedit]
 - git add
 - git commit
 - git log
 - git show <hash>
-- <lag github repo + sett opp remote>
+- [lag github repo + sett opp remote]
 - git push
 - (git pull)
 - git switch --create
