@@ -1,7 +1,6 @@
 Radius = 20;
 Tykkelse = 10;
 Hull_storrelse = 9;
-ID="H";
 $fn = 50; // Set the number of faces for curves
 
 Hull_radius = Hull_storrelse/2;
@@ -20,9 +19,8 @@ module puck(){
 	cylinder(h = Tykkelse, r = Hull_radius+2, center=true);
 }
 
-puck();
 
-translate([0,0,Tykkelse/2])
-color("red")
-linear_extrude(0.5)
-text(ID,halign = "center", valign="center",size=30);
+difference(){
+	puck();
+	cylinder(h = Tykkelse+1, r = Hull_radius, center=true);
+}
