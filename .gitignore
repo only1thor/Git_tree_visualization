@@ -1,2 +1,5 @@
 *.stl
 .idea
+*.gx
+*.fpp
+3d_files/
